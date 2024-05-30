@@ -1,0 +1,14 @@
+{
+    "species": "homo_sapiens.female",
+    "diseases": 
+    {
+        "Reds": "cancer",
+        "Greens": "alz",
+        "Blues": "leukemia"
+    },
+    "colors": {
+        "Reds": {"skin": 0.5, "colon": 0.25, "brain": 1.0},
+        "Greens": {"stomach": 1},
+        "Blues": {"bone": 0.5, "bone marrow": 0.75}
+    }
+}
