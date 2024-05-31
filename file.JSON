@@ -1,5 +1,5 @@
 {
     "cancer": {"heart": 0, "lung": 2, "liver": 4},
-    "alz": {"skin": 0.5, "colon": 0.25, "brain": 1.0},
-    "covid": {"colon": 1, "bone": 1.5}
+    "alz": {"skin": 0.5, "colon": 0.75,  "brain": 1.0},
+    "covid": { "colon": 0.75, "bone": 1.0, "spleen": 0.5}
 }

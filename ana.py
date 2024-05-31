@@ -2,14 +2,11 @@ import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-
 import pyanatomogram as pgram
 import argparse
 import json
 
-# colors_list = list(colors._colors_full_map.values())
 def load_data(parser):
-
     args = parser.parse_args()
     in_file = args.input
     f = open(in_file)
@@ -18,7 +15,7 @@ def load_data(parser):
 def create_plot(data):
     dfs = []
     norms = []
-    colors = ['Greys', 'Purples', 'Blues', 'Greens', 'Oranges', 'Reds']
+    colors = ['Oranges', 'Blues', 'Reds','Purples',  'Greens', 'Greys']
     keys = data.keys()
     nrows = len(keys)
 
@@ -44,7 +41,8 @@ def create_plot(data):
         gram.highlight_tissues(di.to_dict(), cmap=cmap, norm=ni)
         gram.to_matplotlib(ax=plt.subplot(gs[:, 1])) # span all rows, col 1
 
-    plt.show()
+    plt.subplots_adjust(bottom=0.05, top=0.95, hspace=0.3)
+    plt.savefig('plot.png', dpi=200)
 
 
 def main():

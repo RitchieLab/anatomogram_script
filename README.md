@@ -1,1 +1,1 @@
-# anatomogram_script
+# Script for creating anatomograms
